@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Driven Product Development Training</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar">
+        <div class="sidebar-header">AI Driven Product Development Training</div>
+        <nav>
+          <a class="nav-item active" href="#welcome">Welcome</a>
+          <a class="nav-item" href="#sustainable">Sustainable AI Practices</a>
+          <a class="nav-item" href="#docs">Docs &amp; Activity Index</a>
+          <a class="nav-item" href="#lab">Augmented Product Development Lab</a>
+          <div class="section-label">Overview</div>
+          <a class="nav-item sub-item" href="#round1">Round 1: MVP</a>
+          <a class="nav-item sub-item active-sub" href="#round2">Round 2: Advanced</a>
+          <a class="nav-item sub-item" href="#review">1. Code Reviews and Pull Requests</a>
+          <a class="nav-item sub-item" href="#rules">2. CLAUDE.md to Rules</a>
+          <a class="nav-item sub-item" href="#gwt">3. GWT Story Skill</a>
+          <a class="nav-item sub-item" href="#pattern">4. Encode a Pattern (Optional)</a>
+          <a class="nav-item sub-item" href="#backlog">5. Expand Backlog</a>
+          <a class="nav-item sub-item" href="#agent">6. Agent + Skills</a>
+          <a class="nav-item sub-item" href="#tdd">7. TDD with Claude</a>
+          <a class="nav-item sub-item" href="#testing">8. Integration Testing</a>
+          <a class="nav-item sub-item" href="#audit">9. DRY Audit</a>
+          <a class="nav-item sub-item" href="#review2">10. Bonus: Custom Review Instructions</a>
+          <div class="section-label">Round 3: Precision &amp; Automation</div>
+          <a class="nav-item sub-item" href="#agent-repo">Agent Ready Repo</a>
+          <a class="nav-item sub-item" href="#setup">Setup &amp; Installation</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
+          <div class="course-title">AI Driven Product Development Training</div>
+          <button class="course-btn">Course</button>
+        </header>
+
+        <section class="hero" id="welcome">
+          <h1>PDLC Training</h1>
+          <p class="subtitle">
+            End-to-end delivery with AI, from story to shipped code. See the
+            <span>PDLC Overview</span> for more details.
+          </p>
+          <div class="divider"></div>
+        </section>
+
+        <section class="section-block" id="sustainable">
+          <h2>Sustainable AI Practices</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Practice</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Planning</td>
+                  <td>Reduce ambiguity, surface risks early, and set the foundation before building.</td>
+                </tr>
+                <tr>
+                  <td>Documentation</td>
+                  <td>Enable fast knowledge transfer and create the context for agent-driven work.</td>
+                </tr>
+                <tr>
+                  <td>Implementation</td>
+                  <td>Translate ideas into working solutions through disciplined execution.</td>
+                </tr>
+                <tr>
+                  <td>Testing</td>
+                  <td>Validate that what is built works as intended and catches regressions early.</td>
+                </tr>
+                <tr>
+                  <td>Security</td>
+                  <td>Embed risk awareness into design, build, and validation through the PDLC.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section-block" id="docs">
+          <h2>Docs &amp; Activity Index</h2>
+          <p>
+            Anthropic’s official documentation is the authoritative source for Claude Code
+            features. Bookmark it and use it as your primary reference as you learn.
+          </p>
+          <ul class="link-list">
+            <li><a href="#">docs.anthropic.com/en/docs/claude-code</a></li>
+            <li><a href="#">docs.anthropic.com/en/docs/claude-code/overview</a></li>
+            <li><a href="#">docs.anthropic.com/en/docs/claude-code/cli-reference</a></li>
+          </ul>
+        </section>
+
+        <section class="section-block" id="lab">
+          <h2>Augmented Product Development Lab</h2>
+          <p>
+            The development lab combines product thinking, engineering discipline, and AI
+            assistance in a practical workflow that supports rapid iteration.
+          </p>
+        </section>
+
+        <section class="section-block" id="round2">
+          <h2>Round 2: Advanced</h2>
+          <div class="mini-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Activity</th>
+                  <th>Focus Area</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1. Code Reviews and Pull Requests</td><td>PR description skill, then security detection and remediation</td></tr>
+                <tr><td>2. CLAUDE.md to Rules</td><td>Breaking apart into rules files</td></tr>
+                <tr><td>3. GWT Story Skill</td><td>Encode a team template</td></tr>
+                <tr><td>4. Encode a Pattern (Optional)</td><td>Repeated correction — skill</td></tr>
+                <tr><td>5. Expand Backlog with New Features</td><td>Skill-driven consistency</td></tr>
+                <tr><td>6. Build an Agent That Uses Skills</td><td>Sub-agents composing skills</td></tr>
+                <tr><td>7. TDD with Claude</td><td>Red, green, refactor</td></tr>
+                <tr><td>8. Integration Testing</td><td>API-to-positions pipeline tests</td></tr>
+                <tr><td>9. DRY Convention Audit</td><td>Finding repeated corrections</td></tr>
+                <tr><td>10. Bonus: Tune the Pipeline Reviewer</td><td>Custom review instructions (bonus)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section-block" id="rules">
+          <h2>Setup Guides</h2>
+          <p>Get Claude Code up and running:</p>
+          <ul class="bullet-list">
+            <li>Setup Overview — Start here</li>
+            <li>macOS Setup — Mac-specific guide</li>
+            <li>Windows Setup — Windows-specific guide</li>
+          </ul>
+        </section>
+
+        <section class="callout">
+          <h3>Lost? Just ask in Claude Code</h3>
+          <p>
+            Requires this repository: The course-helping skill and training-guide agent are bundled with the course repo.
+            To use them, clone it and run the agent.
+          </p>
+          <p>
+            If you get stuck or want to know where a concept is covered, just ask Claude Code naturally — there’s a course-helper skill that catches questions like:
+          </p>
+          <ul class="bullet-list">
+            <li>“I’m stuck on activity 3, where do I start?”</li>
+            <li>“What’s plan mode and where do I learn about it?”</li>
+            <li>“What’s expected for this checkpoint?”</li>
+          </ul>
+          <p>You can also invoke the underlying agent directly with <span class="inline-code">@training-guide</span>.</p>
+        </section>
+
+        <section class="section-block" id="agent-repo">
+          <h2>Agent Ready Repo</h2>
+          <p>
+            This project is structured so an AI agent can inspect the repository, understand the
+            intent, and suggest improvements without needing manual setup.
+          </p>
+        </section>
+
+        <section class="section-block" id="setup">
+          <h2>Setup &amp; Installation</h2>
+          <ul class="bullet-list">
+            <li>Install Claude Code</li>
+            <li>Authenticate with your account</li>
+            <li>Clone the training repo</li>
+            <li>Run the agent and begin the workshop flow</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
