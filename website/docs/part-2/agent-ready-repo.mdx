@@ -1,0 +1,53 @@
+---
+id: agent-ready-repo
+title: Agent Ready Repo
+sidebar_label: Agent Ready Repo
+sidebar_position: 90
+---
+
+# Agent Ready Repo
+
+An agent-ready repository gives both human contributors and AI systems enough structured context to
+make safe, useful changes. It does not mean granting broad autonomy.
+
+## Foundation checklist
+
+- A clear README describing purpose, setup, and common commands
+- Version-controlled contribution and coding guidance
+- Test commands that run reliably in a documented environment
+- Small, modular components with clear ownership boundaries
+- Dependency and secret-management practices
+- Pull-request templates or stated review expectations
+- Explicit constraints on sensitive data and production actions
+
+## Recommended structure
+
+```text
+.
+|-- README.md
+|-- CLAUDE.md
+|-- .claude/
+|   |-- agents/
+|   `-- skills/
+|-- .github/
+|   `-- workflows/
+|-- docs/
+`-- website/
+```
+
+This repository follows that shape: rules in `CLAUDE.md`, reusable definitions in `.claude/`,
+engineering notes in `docs/`, and the course site in `website/`.
+
+## Human-in-the-loop design
+
+Require review for merges and for any action that changes external systems. Structure agents to
+propose, validate, and explain changes rather than silently make high-impact decisions.
+
+## Verifying the claim
+
+A repository is agent-ready when a capable contributor who has never seen it can clone, install,
+test, and make a correct small change using only the committed documentation. If that requires
+tribal knowledge, the gap is documentation, not tooling.
+
+Test it directly: hand the repository to someone outside the team and watch where they stall. Every
+question they have to ask is a documentation defect.

@@ -1,30 +1,67 @@
-# AI Driven Product Development Training
+# AI-Driven Product Development
 
-This repository is a local learning repo inspired by the course layout shown in the screenshots. It is structured as a readable, course-style documentation site so you can learn from it directly in the browser.
+A public, original training site for applying AI responsibly across the Product Development
+Lifecycle (PDLC).
 
-## Open the course
+This repository contains no proprietary employer code, internal workflows, ticket identifiers,
+credentials, customer data, or confidential documentation.
 
-- Open `index.html` in your browser.
-- Or use a simple local static server:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit:
+## Layout
 
 ```text
-http://localhost:8000
+.
+|-- .claude/         Agent and skill definitions produced by the lab
+|-- .github/         CI and GitHub Pages deployment
+|-- docs/            Engineering notes about this repository
+|-- website/         The course site; course content is in website/docs/
+|-- CLAUDE.md        Repository rules for AI-assisted contributions
+|-- .checkmarx       Security-scan configuration placeholder
+`-- README.md
 ```
 
-## What is included
+Note the two `docs` directories. `docs/` at the root holds engineering notes about maintaining the
+repository. `website/docs/` holds the course content learners read.
 
-- Dark course-style layout
-- Left-hand lesson navigation
-- Section-based learning content
-- Practice tables, setup guides, and activity summaries
-- A repo-friendly structure for learning and editing
+## Learning model
 
-## Repo status
+The training moves teams into the **Augmented** category of the Product Team Maturity Model by
+focusing on five Sustainable AI Practices spanning the PDLC: Planning, Documentation,
+Implementation, Testing, and Security.
 
-This project is initialized as a Git repository.
+| Round | Activities | Focus |
+| --- | --- | --- |
+| Round 1 - MVP | 8 | Establish a small, reviewable AI-assisted workflow |
+| Round 2 - Advanced | 10 | Standardize practices for review, requirements, testing, and quality |
+| Round 3 - Precision & Automation | 6 | Governed automation with measurable controls |
+
+## Run the site
+
+```bash
+cd website
+npm install
+npm start
+```
+
+The dev server prints a local URL, usually `http://localhost:3000`.
+
+Before pushing, run what CI runs:
+
+```bash
+cd website
+npm test
+npm run build
+```
+
+## Publish
+
+Push to `main`, then set **Settings -> Pages -> Source** to **GitHub Actions**. The workflow builds
+the site and deploys it. Pull requests run the same build without deploying.
+
+## Contributing
+
+See [CLAUDE.md](./CLAUDE.md) for repository rules and
+[docs/content-style-guide.md](./docs/content-style-guide.md) for content conventions.
+
+## License
+
+Add an open-source license after deciding how others may reuse the training materials.
