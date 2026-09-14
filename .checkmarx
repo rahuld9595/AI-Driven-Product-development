@@ -1,0 +1,14 @@
+# Checkmarx scan configuration.
+#
+# PLACEHOLDER. This file exists because the reference repository includes a
+# `.checkmarx` configuration, but its contents were not available and internal
+# scan configuration should not be published to a public repository.
+#
+# Populate it from your organization's Checkmarx template, or delete this file
+# if the public repository is not scanned. An empty or wrong configuration is
+# worse than none: it can cause a scan to silently pass without checking
+# anything.
+#
+# A typical configuration declares the project name, the preset, the source
+# paths to include, and the paths to exclude. Note that `node_modules` and
+# `website/build` should always be excluded from source scanning.
